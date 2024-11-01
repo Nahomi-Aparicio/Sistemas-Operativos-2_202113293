@@ -1,0 +1,1 @@
+Parece que el problema se resolvió al ejecutar el programa con permisos de sudo. Esto sugiere que la syscall requiere permisos de root para funcionar, lo cual es común en las llamadas del sistema personalizadas o de bajo nivel.

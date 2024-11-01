@@ -1,0 +1,1 @@
+savedcmd_/home/nayo/Escritorio/Proyecto/pruebas/ram_stats_module.mod := printf '%s\n'   ram_stats_module.o | awk '!x[$$0]++ { print("/home/nayo/Escritorio/Proyecto/pruebas/"$$0) }' > /home/nayo/Escritorio/Proyecto/pruebas/ram_stats_module.mod

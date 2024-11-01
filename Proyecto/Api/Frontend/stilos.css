@@ -1,0 +1,175 @@
+body {
+    background-color: rgb(7, 51, 50);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%;
+    padding: 20px;
+}
+
+.card {
+    background-color:rgb(170, 203, 196);
+    color: #032221;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 300px; /* Altura general */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.tall {
+    height: 390px;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+canvas {
+    max-width: 150%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.credits {
+    height: 350px;
+
+}
+
+.transition {
+    top: -10px;
+}
+
+.monthly-retail {
+    height: 400px;
+}
+
+.product-statistic {
+    height: 400px;
+    background-color: transparent;
+}
+
+.finance {
+    height: 400px;
+}
+
+.visitors {
+    height: 400px;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* Cambiar a dos columnas */
+    }
+
+    .wide {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Cambiar a una columna en pantallas más pequeñas */
+    }
+
+    .card {
+        height: auto; /* Dejar que las tarjetas se ajusten a su contenido */
+    }
+
+    .wide {
+        grid-column: span 1; /* Ocupando una sola columna */
+    }
+}.memory-usage-container {
+    display: flex; /* Organiza el contenido de forma horizontal */
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-around; /* Espacio entre los elementos */
+}
+
+.memory-labels {
+    display: flex;
+    flex-direction: column; /* Coloca los labels en forma vertical */
+    gap: 10px; /* Espaciado entre los labels */
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #17876d; /* Color del texto */
+    background-color: #1e3352; /* Fondo del label */
+    padding: 8px 16px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center;
+}
+
+.table-container {
+    margin-top: 200px; /* Espacio entre las gráficas y el div de la tabla */
+}
+table {
+    width: 80%; /* Ancho de la tabla */
+    border-collapse: collapse; /* Eliminar espacios entre celdas */
+    margin: 0 auto; /* Centrar la tabla */
+}
+th, td {
+    border: 1px solid #f1f7f5; /* Bordes de la tabla */
+    padding: 10px; /* Espaciado interno en celdas */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+th {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo para encabezados */
+}
+article {
+    color: white; /* Color del texto */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 600px; /* Ancho máximo del artículo */
+    margin: 20px auto; /* Centrado horizontal y espacio superior/inferior */
+    text-align: center; /* Centrar el texto */
+}
+
+h1 {
+    font-size: 2em; /* Tamaño de fuente del título */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    color: #c750ec; /* Color del título */
+}
+
+p {
+    font-size: 1.2em; /* Tamaño de fuente del párrafo */
+    margin-bottom: 10px; /* Espacio debajo del párrafo */
+}
+
+small {
+    display: block; /* Hace que cada elemento pequeño esté en una nueva línea */
+    font-size: 0.9em; /* Tamaño de fuente del texto pequeño */
+    color: #b0b0b0; /* Color del texto pequeño */
+}
+
+a {
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    color: #c750ec; /* Color del enlace */
+    font-weight: bold; /* Negrita para el enlace */
+    margin-top: 10px; /* Margen superior del enlace */
+    display: inline-block; /* Para que el margen funcione */
+    padding: 8px 12px; /* Espaciado interno del enlace */
+    border-radius: 5px; /* Bordes redondeados del enlace */
+    transition: background-color 0.3s; /* Transición para el fondo */
+}
+
+a:hover {
+    background-color: rgba(199, 80, 236, 0.2); /* Fondo ligero al pasar el ratón */
+}

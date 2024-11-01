@@ -1,0 +1,1 @@
+savedcmd_kernel/configs.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o kernel/configs.ko kernel/configs.o kernel/configs.mod.o;  make -f ./arch/x86/Makefile.postlink kernel/configs.ko

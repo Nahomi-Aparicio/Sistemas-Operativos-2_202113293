@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto | SO2</title>
+    <link rel="stylesheet" href="stilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="card credits wide">
+            <h2>Procesos que mas memori usan </h2>
+            <table id="processTable">
+                <thead>
+                    <tr>
+                        <th>PID</th>
+                        <th>Nombre</th>
+                        <th>RSS (Bytes)</th>
+                        <th>Tiempo de CPU (ns)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Las filas se agregarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+        <div class="card transition tall">
+            <h2>Uso de memoria</h2>
+            <div class="memory-usage-container">
+                <canvas id="myPieChart1" width="350" height="350"></canvas>
+                <div class="memory-labels">
+                    <label id="ramUso">RAM EN USO: 0 GB</label>
+                    <label id="ramLibre">RAM LIBRE: 0 GB</label>
+                    <label id="ramTotal">CACHE: 0 GB</label>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="card monthly-retail tall">
+            <h2>Páginas activas e inactivas</h2>
+            <canvas id="myPieChart2" width="350" height="350"></canvas>
+        </div>
+
+        <div class="card product-statistic">
+            <img src="/home/nayo/Escritorio/Proyecto/Api/img.jpg"  style="max-width: 120%; height: 120%;">
+
+        </div>
+
+        <div class="card finance wide">
+            <h2>Uso de memoria Swap</h2>
+            <canvas id="lineasswap" width="1200" height="390"></canvas>
+
+        </div>
+
+        <div class="card visitors">
+            <h2>Cantidad de fallos de página</h2>
+            <canvas id="BarrasFallo"width="500" height="380" ></canvas>
+        </div>
+    </div>
+
+    <script src="updateChart.js"></script> <!-- Archivo para actualizar las gráficas -->
+</body>
+</html>
